@@ -9,11 +9,13 @@ import UIKit
 
 class GreatingViewController: UIViewController {
 
+    @IBOutlet weak var userNameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonPressed(_ sender: Any) {
+    }
+    
 }
 
