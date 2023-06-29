@@ -8,12 +8,19 @@
 import UIKit
 
 class GreatingViewController: UIViewController {
-
+    
+    @IBOutlet weak var GreatingLabel: UILabel!
+    
+    private var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        person = Person(name: "Tim", surname: "Cook")
     }
 
-
+    @IBAction func GreatingButtonAction(_ sender: Any) {
+        GreatingLabel.text = ("Hello \(person.name) \(person.surname) !")
+    }
+    
 }
 
