@@ -9,9 +9,12 @@ import UIKit
 
 class GreatingViewController: UIViewController {
     
-    @IBOutlet weak var GreatingLabel: UILabel!
+    let a = 7
     
     private var person: Person!
+    
+    @IBOutlet weak var GreatingLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,8 @@ class GreatingViewController: UIViewController {
     @IBAction func GreatingButtonAction(_ sender: Any) {
         GreatingLabel.text = ("Hello \(person.name) \(person.surname) !")
     }
+    
+    
     
 }
 
