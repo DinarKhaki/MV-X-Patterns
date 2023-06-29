@@ -5,4 +5,7 @@
 //  Created by Dinar Khakimov on 29.06.2023.
 //
 
-import Foundation
+struct Person {
+    let name: String
+    let surname: String
+}
